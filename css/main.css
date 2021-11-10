@@ -7,6 +7,7 @@
   position: relative;
   color: white;
   text-align: center;
+  letter-spacing: 5px;
 }
 
 .banner .banner_box img {
@@ -25,6 +26,7 @@
 }
 
 .banner .banner_box .title_name {
+  margin: 20px 0;
   font-size: 120px;
 }
 
@@ -183,6 +185,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 9px 35px 9px 21px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.banner .search .search_a:hover {
+  background: #FCBC71;
 }
 
 .banner .search .search_a img {
