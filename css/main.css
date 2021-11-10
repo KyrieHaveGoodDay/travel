@@ -71,7 +71,65 @@ nav div .nav-link {
 
 nav div .active {
   color: #ffab47 !important;
-  border-bottom: 4px solid #FFAB47 !important;
+  border-bottom: 4px solid #ffab47 !important;
+}
+
+.viewBox {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+.viewBox a {
+  width: 23%;
+  text-decoration: none;
+}
+
+.viewBox a .view_card {
+  border: 1px solid #eeeeee;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.viewBox a .view_card:hover {
+  border: 1px solid #ffab47;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.viewBox a .view_card img {
+  width: 100%;
+  height: 176px;
+}
+
+.viewBox a .view_card .view_text {
+  padding: 20px;
+}
+
+.viewBox a .view_card .view_text div {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #636366;
+  margin-bottom: 10px;
+}
+
+.viewBox a .view_card .view_text p {
+  color: #79b4b7;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 
 * {
