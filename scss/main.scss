@@ -9,6 +9,10 @@
         color: white;
         text-align: center;
         letter-spacing: 5px;
+        @media screen and (max-width:414px){
+            height: 60vh;
+            letter-spacing: normal;
+          }
         img{
             width: 100%;
             height: 100%;
@@ -16,17 +20,31 @@
             position: absolute;
             left: 0;
             z-index: -1;
+            @media screen and (max-width:414px){
+               object-fit:fill;
+              }
         }
         p{
             padding-top: 200px;
             font-size: 40px;
+            @media screen and (max-width:414px){
+              padding-top: 100px;
+              font-size: 20px;
+            }
         }
         .title_name{
             margin: 20px 0;
             font-size: 120px;
+            @media screen and (max-width:414px){
+               font-size: 40px;
+               margin: 10px 0;
+              }
         }
         span{
             font-size: 30px;
+            @media screen and (max-width:414px){
+                font-size: 18px;
+              }
         }
     }
     // 箭頭
@@ -38,6 +56,9 @@
         z-index: 10;
         display: flex;
         gap:50px;
+        @media screen and (max-width:414px){
+            display: none;
+           }
         .swiper-left{
             width: 40px;
             height: 40px;
@@ -77,6 +98,11 @@
        left: 50px;
        bottom: 30px;
     //    background: #000;
+    @media screen and (max-width:414px){
+       bottom: 20px;
+       left: 50%;
+        transform: translateX(-50px);
+       }
     }
     .swiper-pagination-bullet{
         background: #fff;
@@ -98,7 +124,9 @@
         right: 0;
         z-index: 1;
         border-left: 1px solid white;
-        
+        @media screen and (max-width:768px){
+            display: none;
+        }
         a{
             color: white;
             .index_box{
@@ -148,6 +176,20 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+        @media screen and (max-width:414px){
+            bottom: 46px;
+            top: auto;
+            left: 77px;
+            transform: translate(0,0);
+            width: 260px;
+            height: 160px;
+            // display: block;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px 20px ;
+            text-align: center;
+            
+          }
         .search_select >select{
             width: 200px;
             height: 40px;
@@ -155,6 +197,9 @@
             border: none;
             border-radius: 2px;
             padding-left: 10px;
+            @media screen and (max-width:414px){
+                padding-left: 20px;
+               }
         }
         .search_a{
             width: 160px;
@@ -167,6 +212,16 @@
             &:hover{
                 background: #FCBC71;
             }
+            @media screen and (max-width:414px){
+                width: 200px;
+                padding: 9px 0;
+                margin-right: 0;
+                // justify-content: center;
+                // margin-left: 10px;
+                justify-content: center;
+                // margin-top: 20px;
+                
+               }
             img{
                 width: 40px;
                 height: 40px;
