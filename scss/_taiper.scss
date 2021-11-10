@@ -28,3 +28,36 @@
 
     }
 }
+.banner_newtaiper{
+    background-image: url(../img/banner/newtaipei.jpg);
+}
+.banner_tainan{
+    background-image: url(../img/banner/tainan.jpg);
+}
+.banner_kaohsiung{
+    background-image: url(../img/banner/kaohsiung.jpg);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        a{
+            width: 290px;
+            font-size: 24px;
+            text-align: center;
+            color: #636366;
+        }
+        .nav-link{
+            margin: 0 !important;
+            border-top-left-radius:0 !important;
+            border-top-right-radius:0 !important;
+            border: 0 !important;
+            // border-bottom: 4px solid #FFAB47 !important;
+        }
+        .active{
+            color: #ffab47 !important;
+              border-bottom: 4px solid #FFAB47 !important;
+        }
+    }
+}
