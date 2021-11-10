@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="125px" viewBox="0 0 130 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Taiwan Travel</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="130" height="125"></rect>
+        <rect id="path-3" x="5" y="-14" width="120" height="134"></rect>
+        <filter x="-6.2%" y="-5.6%" width="112.5%" height="111.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-5" font-family="TimesNewRomanPSMT, Times New Roman" font-size="30" font-weight="normal" fill="#FFFFFF">
+            <tspan x="21.0693359" y="51">Taiwan</tspan>
+            <tspan x="26.3867188" y="84">Travel</tspan>
+        </text>
+        <filter x="-6.8%" y="-9.1%" width="113.6%" height="118.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-guideline" transform="translate(-291.000000, -1895.000000)">
+            <g id="Rectangle" transform="translate(291.000000, 1895.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <rect fill-opacity="0.4" fill="#79B4B7" mask="url(#mask-2)" x="-5" y="-14" width="141" height="145"></rect>
+                <g mask="url(#mask-2)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <rect stroke="#FFFFFF" stroke-width="1" stroke-linejoin="square" x="5.5" y="-13.5" width="119" height="133"></rect>
+                </g>
+                <g id="Taiwan-Travel" mask="url(#mask-2)" fill="#FFFFFF" fill-opacity="1">
+                    <use filter="url(#filter-6)" xlink:href="#text-5"></use>
+                    <use xlink:href="#text-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

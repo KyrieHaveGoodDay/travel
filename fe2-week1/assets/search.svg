@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>search</title>
+    <g id="f2e-week1-mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design-guideline_mobile" transform="translate(-162.000000, -1386.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="icon_search" transform="translate(162.000000, 1386.000000)">
+                <g id="Group-3" transform="translate(20.676777, 21.176777) rotate(-45.000000) translate(-20.676777, -21.176777) translate(12.176777, 9.926777)">
+                    <path d="M8.5,0 C13.1944204,0 17,3.80557963 17,8.5 C17,12.8560807 13.7232094,16.4468259 9.50007588,16.941788 L9.5,21.5 C9.5,22.0522847 9.05228475,22.5 8.5,22.5 C7.98716416,22.5 7.56449284,22.1139598 7.50672773,21.6166211 L7.5,21.5 L7.50091712,16.9419043 C3.27730429,16.4473888 -9.09494702e-13,12.8564221 -9.09494702e-13,8.5 C-9.09494702e-13,3.80557963 3.80557963,0 8.5,0 Z M8.5,2 C4.91014913,2 2,4.91014913 2,8.5 C2,12.0898509 4.91014913,15 8.5,15 C12.0898509,15 15,12.0898509 15,8.5 C15,4.91014913 12.0898509,2 8.5,2 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
