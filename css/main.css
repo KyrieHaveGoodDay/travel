@@ -1,3 +1,40 @@
+.banner_taiper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/banner/taipei.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -450px;
+}
+
+.banner_taiper .travel {
+  position: absolute;
+  left: 5%;
+}
+
+.banner_taiper h1 {
+  padding-top: 40px;
+  font-size: 120px;
+  text-align: center;
+  color: white;
+}
+
+.banner_taiper span {
+  display: block;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.banner_taiper .search_taiper {
+  top: 65%;
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .banner {
   position: relative;
 }
@@ -197,7 +234,7 @@
   padding: 30px;
 }
 
-.banner .search {
+.search {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -221,7 +258,7 @@
 }
 
 @media screen and (max-width: 414px) {
-  .banner .search {
+  .search {
     bottom: 46px;
     top: auto;
     left: 77px;
@@ -237,7 +274,7 @@
   }
 }
 
-.banner .search .search_select > select {
+.search .search_select > select {
   width: 200px;
   height: 40px;
   background: #ffffff;
@@ -247,12 +284,12 @@
 }
 
 @media screen and (max-width: 414px) {
-  .banner .search .search_select > select {
+  .search .search_select > select {
     padding-left: 20px;
   }
 }
 
-.banner .search .search_a {
+.search .search_a {
   width: 160px;
   height: 40px;
   background: #FFAB47;
@@ -267,12 +304,12 @@
   transition: 0.5s;
 }
 
-.banner .search .search_a:hover {
+.search .search_a:hover {
   background: #FCBC71;
 }
 
 @media screen and (max-width: 414px) {
-  .banner .search .search_a {
+  .search .search_a {
     width: 200px;
     padding: 9px 0;
     margin-right: 0;
@@ -282,12 +319,12 @@
   }
 }
 
-.banner .search .search_a img {
+.search .search_a img {
   width: 40px;
   height: 40px;
 }
 
-.banner .search .search_a span {
+.search .search_a span {
   font-size: 16px;
   color: white;
 }
