@@ -178,10 +178,10 @@ body{
     align-items: center;
     gap: 30px;
     @media screen and (max-width: 414px) {
-        bottom: 46px;
-        top: auto;
-        left: 16%;
-        transform: translate(0, 0);
+        bottom:-60px !important;
+        top: auto !important;
+        // left: 16%;
+        // transform: translate(0, 0);
         width: 260px;
         height: 160px;
         // display: block;

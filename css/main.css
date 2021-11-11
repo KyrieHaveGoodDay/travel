@@ -422,11 +422,8 @@ body {
 
 @media screen and (max-width: 414px) {
   .search {
-    bottom: 46px;
-    top: auto;
-    left: 16%;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    bottom: -60px !important;
+    top: auto !important;
     width: 260px;
     height: 160px;
     -ms-flex-wrap: wrap;
