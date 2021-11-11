@@ -176,6 +176,12 @@ nav div .active {
   white-space: normal;
 }
 
+@media screen and (max-width: 414px) {
+  .viewBox a .view_card .view_text p {
+    -webkit-line-clamp: 1;
+  }
+}
+
 * {
   font-family: "Times New Roman", Times, serif;
 }
