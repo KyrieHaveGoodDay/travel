@@ -1,4 +1,6 @@
+
 var swiper = new Swiper(".mySwiper", {
+   
     navigation: {
         nextEl: ".swiper-right",
         prevEl: ".swiper-left",
@@ -8,9 +10,12 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     on:{
+        slideNextTransitionStart: function(swiper){
+            gsap.to('.search',{duration:0.3 , x:-2000})
+          },
         slideNextTransitionEnd: function(){
-        //   alert('切换结束了');
-          gsap.to('.search',{duration:0.1 , scale:1.2 , repeat:3 , yoyo:true})
+            // gsap.to('.search',{clearProps:"all" })
+            gsap.to('.search',{duration:0.8 , ease:'bounce.out' , x:0  })
         },
         slidePrevTransitionEnd: function(swiper){
             gsap.to('.search',{duration:0.1 , x:-10 , repeat:3 , yoyo:true})
