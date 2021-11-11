@@ -93,6 +93,13 @@ nav div .active {
   border-bottom: 4px solid #ffab47 !important;
 }
 
+@media screen and (max-width: 414px) {
+  nav div .active {
+    border-bottom: none !important;
+    border: 1px solid #ffab47 !important;
+  }
+}
+
 .viewBox {
   max-width: 1160px;
   margin: 0 auto;
@@ -417,7 +424,7 @@ body {
   .search {
     bottom: 46px;
     top: auto;
-    left: 77px;
+    left: 16%;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     width: 260px;

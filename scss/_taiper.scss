@@ -70,6 +70,11 @@ nav {
         .active {
             color: #ffab47 !important;
             border-bottom: 4px solid #ffab47 !important;
+            @media screen and (max-width: 414px) {
+                border-bottom: none!important;
+                border: 1px solid #ffab47 !important;
+                
+            }
         }
     }
 }
