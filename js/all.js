@@ -7,6 +7,15 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
+    on:{
+        slideNextTransitionEnd: function(){
+        //   alert('切换结束了');
+          gsap.to('.search',{duration:0.1 , scale:1.2 , repeat:3 , yoyo:true})
+        },
+        slidePrevTransitionEnd: function(swiper){
+            gsap.to('.search',{duration:0.1 , x:-10 , repeat:3 , yoyo:true})
+          },
+      },
   });
 
  
