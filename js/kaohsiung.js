@@ -103,7 +103,7 @@ xhr.open('GET', kaohsiung_featured_url, true)
 xhr.send()
 xhr.onload = function () {
     var data = JSON.parse(this.responseText);
-    console.log(data);
+    // console.log(data);
     var kaohsiung_list_featured = document.getElementById('kaohsiung_list_featured');
     var str = '';
 
