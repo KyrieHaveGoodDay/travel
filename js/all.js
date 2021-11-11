@@ -13,10 +13,11 @@ var swiper = new Swiper(".mySwiper", {
   let search_a = document.getElementById('search_a');
   search_a.addEventListener('click', (e) => {
       e.preventDefault();
-
+    
       let place = search_select.place.value;
       if (place === 'taipei') {
           window.location.href = '../taipei/';
+          
       }
       if (place === 'newTaipei') {
           window.location.href = '../NewTaipei/';
@@ -27,6 +28,7 @@ var swiper = new Swiper(".mySwiper", {
       if (place === 'kaohsiung') {
           window.location.href = '../Kaohsiung/';
       }
+      
   })
 
   // 台北旅遊api資料
@@ -84,6 +86,6 @@ var swiper = new Swiper(".mySwiper", {
         //         </div>
         //     </a>
         // `
-        taiper_food.innerHTML +=str;
+        // taiper_food.innerHTML +=str;
       }
   }

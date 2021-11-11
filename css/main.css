@@ -458,6 +458,7 @@ body {
   padding: 9px 35px 9px 21px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .search .search_a:hover {
