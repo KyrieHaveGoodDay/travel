@@ -37,7 +37,7 @@ var swiper = new Swiper(".mySwiper", {
   xhr.onload = function(){
       var data = JSON.parse(this.responseText);
       console.log(data);
-      var nav_home = document.getElementById('nav_home');
+      var taiper_view = document.getElementById('taiper_view');
       var str = '';
       
       for(item in data){
@@ -54,7 +54,7 @@ var swiper = new Swiper(".mySwiper", {
                 </div>
             </a>
         `
-        nav_home.innerHTML +=str;
+        taiper_view.innerHTML +=str;
       }
   }
   
