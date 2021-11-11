@@ -58,6 +58,29 @@
     integrity='sha512-r1+wZ6Dt2YNg8FujUHBbiXmDRNcVLTcN2q+lm0TSbmoBNUFJ4FdQ3zLeShz0bllBlzQ0QWtZuzJgdrW9xGc2Dw=='
     crossorigin='anonymous'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' integrity='sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==' crossorigin='anonymous'></script>
+    <script>
+        let select = document.getElementById('search_select');
+        let search_a = document.getElementById('search_a');
+        search_a.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            let place = search_select.place.value;
+            if (place === 'taipei') {
+                window.location.href = '../taipei/index.html';
+
+            }
+            if (place === 'newTaipei') {
+                window.location.href = '../NewTaipei/index.html';
+            }
+            if (place === 'tainan') {
+                window.location.href = '../Tainan/index.html';
+            }
+            if (place === 'kaohsiung') {
+                window.location.href = '../Kaohsiung/index.html';
+            }
+
+        })
+    </script>
     <script src="../js/all.js"></script>
 </body>
 </html>
