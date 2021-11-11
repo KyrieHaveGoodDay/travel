@@ -41,6 +41,7 @@ var swiper = new Swiper(".mySwiper", {
       var str = '';
       
       for(item in data){
+        console.log(item);
         
         str=
         `

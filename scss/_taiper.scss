@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -450px;
+    @media screen and (max-width: 414px) {
+     background-size:auto;
+        
+    }
     .travel {
         position: absolute;
         left: 5%;
@@ -15,6 +19,11 @@
         font-size: 120px;
         text-align: center;
         color: white;
+        @media screen and (max-width: 414px) {
+           padding-top: 150px;
+           font-size: 80px;
+            
+        }
     }
     span {
         display: block;
@@ -46,6 +55,10 @@ nav {
             font-size: 24px;
             text-align: center;
             color: #636366;
+            @media screen and (max-width: 414px) {
+                width: 50%;
+                
+            }
         }
         .nav-link {
             margin: 0 !important;
@@ -72,9 +85,18 @@ nav {
     // align-items: center !important;
     flex-wrap: wrap;
     gap: 25px;
+    @media screen and (max-width: 414px) {
+        width: 100%;
+        justify-content: center;
+        
+    }
     a {
         width: 23%;
         text-decoration: none;
+        @media screen and (max-width: 414px) {
+            width: 40%;
+            
+        }
         .view_card {
             // width: 23%;
             // height: 320px;
