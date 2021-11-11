@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper", {
     
       let place = search_select.place.value;
       if (place === 'taipei') {
-          window.location.href = '../taipei/';
+          window.location.href = './Tainan/index.html';
           
       }
       if (place === 'newTaipei') {
