@@ -422,7 +422,7 @@ body {
 
 @media screen and (max-width: 414px) {
   .search {
-    bottom: -60px !important;
+    bottom: 40px !important;
     top: auto !important;
     width: 260px;
     height: 160px;
