@@ -56,7 +56,7 @@
                 <div class="index_box index_bg">
                     <h3>Cuisines</h3>
                     <p>必吃美食</p>
-                    
+
                     <svg version="1.1" class="index_svg" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="302.37px" height="182.83px"
                         viewBox="0 0 302.37 182.83" style="overflow:visible;enable-background:new 0 0 302.37 182.83;"
@@ -344,7 +344,29 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js'
         integrity='sha512-r1+wZ6Dt2YNg8FujUHBbiXmDRNcVLTcN2q+lm0TSbmoBNUFJ4FdQ3zLeShz0bllBlzQ0QWtZuzJgdrW9xGc2Dw=='
         crossorigin='anonymous'></script>
+    <script>
+        let select = document.getElementById('search_select');
+        let search_a = document.getElementById('search_a');
+        search_a.addEventListener('click', (e) => {
+            e.preventDefault();
 
+            let place = search_select.place.value;
+            if (place === 'taipei') {
+                window.location.href = './taipei/index.html';
+
+            }
+            if (place === 'newTaipei') {
+                window.location.href = './NewTaipei/index.html';
+            }
+            if (place === 'tainan') {
+                window.location.href = './Tainan/index.html';
+            }
+            if (place === 'kaohsiung') {
+                window.location.href = './Kaohsiung/index.html';
+            }
+
+        })
+    </script>
     <script src="./js/all.js"></script>
 </body>
 

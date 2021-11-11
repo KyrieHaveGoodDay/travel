@@ -9,27 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  let select = document.getElementById('search_select');
-  let search_a = document.getElementById('search_a');
-  search_a.addEventListener('click', (e) => {
-      e.preventDefault();
-    
-      let place = search_select.place.value;
-      if (place === 'taipei') {
-          window.location.href = './Tainan/index.html';
-          
-      }
-      if (place === 'newTaipei') {
-          window.location.href = '../NewTaipei/';
-      }
-      if (place === 'tainan') {
-          window.location.href = '../Tainan/';
-      }
-      if (place === 'kaohsiung') {
-          window.location.href = '../Kaohsiung/';
-      }
-      
-  })
+ 
 
   // 台北旅遊api資料
   var dataUrl= "https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot/Taipei?$top=30&$format=JSON"
