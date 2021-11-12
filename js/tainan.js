@@ -26,7 +26,7 @@ xhr.onload = function () {
                 </div>
             </a>
          `
-         tainan_view_list.innerHTML += str;
+        tainan_view_list.innerHTML += str;
     }
 }
 
@@ -59,7 +59,7 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      tainan_food_list.innerHTML += str;
+        tainan_food_list.innerHTML += str;
     }
 }
 
@@ -91,7 +91,7 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      tainan_home_list.innerHTML += str;
+        tainan_home_list.innerHTML += str;
     }
 }
 
@@ -123,6 +123,6 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      tainan_featured_list.innerHTML += str;
+        tainan_featured_list.innerHTML += str;
     }
 }

@@ -58,7 +58,7 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      new_food.innerHTML += str;
+        new_food.innerHTML += str;
     }
 }
 
@@ -90,7 +90,7 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      new_home2.innerHTML += str;
+        new_home2.innerHTML += str;
     }
 }
 
@@ -122,6 +122,6 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      new_featured2.innerHTML += str;
+        new_featured2.innerHTML += str;
     }
 }

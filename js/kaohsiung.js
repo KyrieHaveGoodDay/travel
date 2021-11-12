@@ -27,7 +27,7 @@ xhr.onload = function () {
                 </div>
             </a>
          `
-         kaohsiung_list_view.innerHTML += str;
+        kaohsiung_list_view.innerHTML += str;
     }
 }
 
@@ -60,7 +60,7 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      kaohsiung_list_food.innerHTML += str;
+        kaohsiung_list_food.innerHTML += str;
     }
 }
 
@@ -92,11 +92,11 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      kaohsiung_list_home.innerHTML += str;
+        kaohsiung_list_home.innerHTML += str;
     }
 }
 
-// // // 台南精選api
+// 台南精選api
 var kaohsiung_featured_url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/Activity/Kaohsiung?$top=30&$format=JSON"
 var xhr = new XMLHttpRequest()
 xhr.open('GET', kaohsiung_featured_url, true)
@@ -124,6 +124,6 @@ xhr.onload = function () {
              </div>
          </a>
       `
-      kaohsiung_list_featured.innerHTML += str;
+        kaohsiung_list_featured.innerHTML += str;
     }
 }
