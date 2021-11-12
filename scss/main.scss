@@ -2,7 +2,7 @@
 * {
     font-family: "Times New Roman", Times, serif;
 }
-body{
+body {
     position: relative;
     height: 100vh;
 }
@@ -177,9 +177,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    
+
     @media screen and (max-width: 414px) {
-        bottom:-20px !important;
+        bottom: -20px !important;
         top: auto !important;
         // left: 16%;
         // transform: translate(0, 0);
@@ -210,6 +210,7 @@ body{
         align-items: center;
         padding: 9px 35px 9px 21px;
         transition: 0.5s;
+        text-decoration: none;
         cursor: pointer;
         &:hover {
             background: #fcbc71;
@@ -237,23 +238,21 @@ body{
     // width: 300px;
     fill: #ffffff;
 }
-.index_bottom{
+.index_bottom {
     display: none !important;
     @media screen and (max-width: 414px) {
         display: flex !important;
         padding-bottom: 100px;
     }
-    
 }
 
 // 下方選單
-.nav_mb{
+.nav_mb {
     display: none;
     @media screen and (max-width: 414px) {
         display: block;
-        
     }
-    .nav_list{
+    .nav_list {
         position: fixed;
         left: 0;
         bottom: 0%;
@@ -264,23 +263,175 @@ body{
         display: flex;
         justify-content: space-around;
 
-        .list_box{
+        .list_box {
             width: 50px;
             height: 50px;
-          
+
             .st1 {
-            
                 fill: #ffffff;
-                
-                
             }
-            p{
+            p {
                 margin-top: 3px;
                 font-size: 12px;
                 color: white;
-                
             }
         }
-        
+    }
+}
+// 景點背景圖片
+.banner_newtaiper {
+    background-image: url(../img/banner/newtaipei.jpg);
+}
+.banner_tainan {
+    background-image: url(../img/banner/tainan.jpg);
+}
+.banner_kaohsiung {
+    background-image: url(../img/banner/kaohsiung.jpg);
+}
+.hotView {
+    background-image: url(../img/banner/taipei.jpg);
+    // background-position: 60% 60%;
+}
+
+//熱門景點
+.banner_btn_text {
+    color: white;
+    width: 100%;
+    height: 70px;
+
+    position: absolute;
+    bottom: 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    .banner_btn_box {
+        width: 1160px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 14px 0;
+        .banner_btn_text_left {
+            font-size: 30px;
+        }
+        .banner_btn_text_right {
+            font-size: 24px;
+        }
+    }
+}
+.hot_data {
+    width: 1160px;
+    // height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    color: #636366;
+    display: grid;
+    grid-gap: 65px;
+    grid-template-columns: 640px 400px;
+    .hot_data_left {
+        font-size: 16px;
+        margin-top: 60px;
+        .hot_data_left_box {
+            margin-bottom: 30px;
+            p {
+                margin-bottom: 30px;
+                color: #636366;
+            }
+        }
+    }
+    .hot_data_right {
+        margin-top: 30px;
+        color: #636366;
+        .upTime {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .hot_data_right_box {
+            border: 1px solid #ffab47;
+            border-radius: 5px;
+            h3 {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background: #ffab47;
+                font-size: 22px;
+                color: white;
+                text-align: center;
+                padding: 8px 0;
+                font-weight: 600;
+            }
+            .right_content {
+                margin-top: 10px;
+                padding: 0 30px;
+                .content_data {
+                    display: flex;
+                    align-items: center;
+                    gap: 37px;
+                    .contact {
+                        font-size: 16px;
+                        div {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        object-fit: contain;
+                        box-shadow: 0px 0px 10px #ccc;
+                        margin-top: 10px;
+                        padding: 5px;
+                    }
+                }
+                hr {
+                    background: #ffab47;
+                }
+                .openTime {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                p {
+                    line-height: 25px;
+                    // color: #636366;
+                }
+                .week {
+                    margin: 20px 0;
+                    // border: 1px solid black;
+                    span {
+                        width: 14%;
+                        background: #79b4b7;
+                        color: white;
+                        padding: 11px;
+                        border-radius: 50%;
+                        margin: 0 3px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .link {
+                    display: flex;
+                    margin-bottom: 30px;
+                    gap: 10px;
+                    .tpi {
+                        text-decoration: none;
+                        // display: inline;
+                        // border: 1px solid black;
+                        box-shadow: 0 0 10px #ccc;
+                        width: 70%;
+                        font-size: 18px;
+                        text-align: center;
+                        color: #636366;
+                        padding: 3px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// 共用字體顏色
+.specialWord {
+    font-size: 18px;
+    color: #79b4b7;
+    font-weight: 600;
+    &::after {
+        content: "|";
+        margin: 0 5px;
     }
 }
