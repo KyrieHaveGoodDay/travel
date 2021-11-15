@@ -1,83 +1,100 @@
 // 新北景點api
-var new_view_url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot/NewTaipei?$top=30&$format=JSON"
-var xhr = new XMLHttpRequest()
-xhr.open('GET', new_view_url, true)
-xhr.send()
-xhr.onload = function () {
-    var data = JSON.parse(this.responseText);
-    // console.log(data);
-    var new_view = document.getElementById('new_view');
-    var str = '';
-
-    for (item in data) {
-        // console.log(item);
-
-        str =
-            `
-         <a href="${data[item].WebsiteUrl}">
-                <div class="view_card">
-                   
-                    <div class="view_text">
-                        <div>${data[item].Name}</div>
-                        <p style="color:#000; margin-bottom:10px;">${data[item].Phone}</p>
-                        <p style="color:#000; margin-bottom:10px;">${data[item].OpenTime}</p>
-                        <p>${data[item].DescriptionDetail}</p>
-                    </div>
-                </div>
-            </a>
-         `
-        new_view.innerHTML += str;
+axios.get(
+    'https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot/NewTaipei?$top=30&$format=JSON',
+    {
+        headers: getAuthorizationHeader()
     }
-}
+)
+    .then(function (response) {
+        var data = response.data;
+
+        var new_view = document.getElementById('new_view');
+        var str = '';
+
+        for (item in data) {
+            // console.log(item);
+
+            str =
+                `
+             <a href="${data[item].WebsiteUrl}">
+                    <div class="view_card">
+                       
+                        <div class="view_text">
+                            <div>${data[item].Name}</div>
+                            <p style="color:#000; margin-bottom:10px;">${data[item].Phone}</p>
+                            <p style="color:#000; margin-bottom:10px;">${data[item].OpenTime}</p>
+                            <p>${data[item].DescriptionDetail}</p>
+                        </div>
+                    </div>
+                </a>
+             `
+            new_view.innerHTML += str;
+
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+
+
 
 // 新北食物api
-var new_food_url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/Restaurant/NewTaipei?$top=30&$format=JSON"
-var xhr = new XMLHttpRequest()
-xhr.open('GET', new_food_url, true)
-xhr.send()
-xhr.onload = function () {
-    var data = JSON.parse(this.responseText);
-    // console.log(data);
-    var new_food = document.getElementById('new_food');
-    var str = '';
-
-    for (item in data) {
-        // console.log(item);
-
-        str =
-            `
-      <a href="${data[item].WebsiteUrl}">
-             <div class="view_card">
-                 
-                 <div class="view_text">
-                     <div>${data[item].Name}</div>
-                     <p style="color:#000; margin-bottom:10px;">${data[item].Address}</p>
-                     <p style="color:#000; margin-bottom:10px;">${data[item].OpenTime}</p>
-                     <p>${data[item].Description}</p>
-                 </div>
-             </div>
-         </a>
-      `
-        new_food.innerHTML += str;
+axios.get(
+    'https://ptx.transportdata.tw/MOTC/v2/Tourism/Restaurant/NewTaipei?$top=30&$format=JSON',
+    {
+        headers: getAuthorizationHeader()
     }
-}
+)
+    .then(function (response) {
+        var data = response.data;
+
+        var new_food = document.getElementById('new_food');
+        var str = '';
+
+        for (item in data) {
+            // console.log(item);
+
+            str =
+                `
+          <a href="${data[item].WebsiteUrl}">
+                 <div class="view_card">
+                     
+                     <div class="view_text">
+                         <div>${data[item].Name}</div>
+                         <p style="color:#000; margin-bottom:10px;">${data[item].Address}</p>
+                         <p style="color:#000; margin-bottom:10px;">${data[item].OpenTime}</p>
+                         <p>${data[item].Description}</p>
+                     </div>
+                 </div>
+             </a>
+          `
+            new_food.innerHTML += str;
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
 
 // 新北住宿api
-var new_home_url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/Hotel/NewTaipei?$top=30&$format=JSON"
-var xhr = new XMLHttpRequest()
-xhr.open('GET', new_home_url, true)
-xhr.send()
-xhr.onload = function () {
-    var data = JSON.parse(this.responseText);
-    // console.log(data);
-    var new_home2 = document.getElementById('new_home2');
-    var str = '';
+axios.get(
+    'https://ptx.transportdata.tw/MOTC/v2/Tourism/Hotel/NewTaipei?$top=30&$format=JSON',
+    {
+        headers: getAuthorizationHeader()
+    }
+)
+    .then(function (response) {
+        var data = response.data;
 
-    for (item in data) {
-        // console.log(item);
+        var new_home2 = document.getElementById('new_home2');
+        var str = '';
 
-        str =
-            `
+        for (item in data) {
+            // console.log(item);
+
+            str =
+                `
       <a href="${data[item].WebsiteUrl}">
              <div class="view_card">
                  
@@ -90,19 +107,24 @@ xhr.onload = function () {
              </div>
          </a>
       `
-        new_home2.innerHTML += str;
-    }
-}
+            new_home2.innerHTML += str;
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 
-// 新北住宿api
-var new_featured_url = "https://ptx.transportdata.tw/MOTC/v2/Tourism/Activity/NewTaipei?$top=30&$format=JSON"
-var xhr = new XMLHttpRequest()
-xhr.open('GET', new_featured_url, true)
-xhr.send()
-xhr.onload = function () {
-    var data = JSON.parse(this.responseText);
-    // console.log(data);
-    var new_featured2 = document.getElementById('new_featured2');
+// 新北遊程api
+axios.get(
+    'https://ptx.transportdata.tw/MOTC/v2/Tourism/Activity/NewTaipei?$top=30&$format=JSON',
+    {
+        headers: getAuthorizationHeader()
+    }
+)
+    .then(function (response) {
+        var data = response.data;
+
+        var new_featured2 = document.getElementById('new_featured2');
     var str = '';
 
     for (item in data) {
@@ -124,4 +146,24 @@ xhr.onload = function () {
       `
         new_featured2.innerHTML += str;
     }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+
+
+
+function getAuthorizationHeader() {
+    //  填入自己 ID、KEY 開始
+    let AppID = 'faa52f1d358e4339a00d939fc5002668';
+    let AppKey = 'OBjgPktCVJKz9cUq4DT-SU_A7jY';
+    //  填入自己 ID、KEY 結束
+    let GMTString = new Date().toGMTString();
+    let ShaObj = new jsSHA('SHA-1', 'TEXT');
+    ShaObj.setHMACKey(AppKey, 'TEXT');
+    ShaObj.update('x-date: ' + GMTString);
+    let HMAC = ShaObj.getHMAC('B64');
+    let Authorization = 'hmac username=\"' + AppID + '\", algorithm=\"hmac-sha1\", headers=\"x-date\", signature=\"' + HMAC + '\"';
+    return { 'Authorization': Authorization, 'X-Date': GMTString };
 }
