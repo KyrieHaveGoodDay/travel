@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>台灣旅遊景點導覽</title>
-    
+
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.5/swiper-bundle.min.css'
         integrity='sha512-rqgO3rpRP26lpo1DHkKHfxF56E67i1Attk8qej8Qg7cZ82Sh9zy3yHpHOLXDTBuhxoboUKxuWBz2xT5Pk5dH9A=='
         crossorigin='anonymous' />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" >
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <style>
+
+    </style>
 </head>
 
 <body>
-
+    <div class="load-wrapper">
+        <div style="color: #79B4B7" class="loading la-square-jelly-box la-3x">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- 輪播 -->
     <div class="banner swiper mySwiper">
         <div class="swiper-wrapper">
@@ -340,15 +348,20 @@
         </div>
     </div>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+        integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+        crossorigin='anonymous'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js' integrity='sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js'
+        integrity='sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=='
+        crossorigin='anonymous'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.js'
         integrity='sha512-r1+wZ6Dt2YNg8FujUHBbiXmDRNcVLTcN2q+lm0TSbmoBNUFJ4FdQ3zLeShz0bllBlzQ0QWtZuzJgdrW9xGc2Dw=='
         crossorigin='anonymous'></script>
     <script>
-        gsap.to('.swiper-button',{duration:0.2,scale:3.5 , repeat:3 , yoyo:true});
-        gsap.to('.title_name',{duration:0.5,y:-20 , repeat:-1 , yoyo:true});
+        
+
         let select = document.getElementById('search_select');
         let search_a = document.getElementById('search_a');
         search_a.addEventListener('click', (e) => {
@@ -370,6 +383,8 @@
             }
 
         })
+
+        
     </script>
     <script src="./js/all.js"></script>
     <script src="./js/taipei.js"></script>
