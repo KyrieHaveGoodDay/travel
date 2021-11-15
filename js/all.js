@@ -25,6 +25,9 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+// 放大縮小 再換下一個
 
-
+const t1 = gsap.timeline({});
+t1.to('.nav_list',{duration:0.5,height:84,})
+.to('.nav_list>a' , {duration:0.5,keyframes:[{scale:1.5},{scale:1}],stagger:0.1},0.3);
 
