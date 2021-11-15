@@ -9,7 +9,7 @@ axios.get(
         var data = response.data;
         var taiper_view = document.getElementById('taiper_view');
         var str = '';
-        console.log(response.data);
+        // console.log(response.data);
         for (item in data) {
             // console.log(item);
 
